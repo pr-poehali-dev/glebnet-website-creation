@@ -211,6 +211,55 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl font-bold text-gray-900 mb-6 font-serif">
+            О блоге
+          </h3>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <img
+                src="https://cdn.poehali.dev/files/ec6642ed-1960-4992-b6ac-3d8e427fb61a.jpg"
+                alt="Автор блога"
+                className="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-orange-200"
+              />
+            </div>
+            <div className="flex-1 text-left">
+              <h4 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
+                Привет, я Глеб!
+              </h4>
+              <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                Уже более 10 лет путешествую по миру и делюсь своим опытом с
+                другими любителями приключений. Посетил более 50 стран на всех
+                континентах.
+              </p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                В этом блоге я рассказываю о самых интересных местах, культурах
+                и людях, которых встречал в своих путешествиях. Делюсь
+                практическими советами и вдохновляю на новые открытия.
+              </p>
+              <div className="flex gap-4">
+                <Button
+                  variant="outline"
+                  className="border-orange-200 text-orange-600 hover:bg-orange-50"
+                >
+                  <Icon name="Instagram" size={20} className="mr-2" />
+                  Instagram
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-teal-200 text-teal-600 hover:bg-teal-50"
+                >
+                  <Icon name="Mail" size={20} className="mr-2" />
+                  Email
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-500 to-teal-500">
         <div className="max-w-4xl mx-auto text-center">
