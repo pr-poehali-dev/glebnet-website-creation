@@ -156,6 +156,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Special Destinations */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-teal-50">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center font-serif">
+            Уникальные направления
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Глебленд",
+                description: "Волшебная страна бесконечных приключений",
+                icon: "MapPin",
+                color: "from-orange-400 to-orange-600",
+              },
+              {
+                name: "Глебляндия",
+                description: "Сказочное королевство путешественников",
+                icon: "Crown",
+                color: "from-teal-400 to-teal-600",
+              },
+              {
+                name: "Глеб Сити",
+                description: "Мегаполис современных открытий",
+                icon: "Building",
+                color: "from-purple-400 to-purple-600",
+              },
+              {
+                name: "Хлебоглебинск",
+                description: "Город вкусных традиций и культуры",
+                icon: "Coffee",
+                color: "from-amber-400 to-amber-600",
+              },
+            ].map((destination) => (
+              <Card
+                key={destination.name}
+                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 cursor-pointer"
+              >
+                <CardHeader className="text-center">
+                  <div
+                    className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br ${destination.color} flex items-center justify-center group-hover:scale-110 transition-transform`}
+                  >
+                    <Icon
+                      name={destination.icon}
+                      size={32}
+                      className="text-white"
+                    />
+                  </div>
+                  <CardTitle className="text-xl font-serif group-hover:text-orange-600 transition-colors">
+                    {destination.name}
+                  </CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed">
+                    {destination.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                  <Button
+                    variant="ghost"
+                    className="w-full group-hover:bg-orange-50 group-hover:text-orange-600 transition-colors"
+                  >
+                    Исследовать
+                    <Icon name="ArrowRight" size={16} className="ml-2" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Blog Posts */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
