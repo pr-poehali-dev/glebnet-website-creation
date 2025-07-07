@@ -283,6 +283,13 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Special Message */}
+      <div className="bg-gray-800 text-center py-8 px-4">
+        <p className="text-orange-400 text-2xl font-bold font-serif tracking-wide">
+          Глеб следит за вами
+        </p>
+      </div>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
